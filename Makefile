@@ -378,6 +378,7 @@ ${WRKDIR}/.config_done:
 	fi
 	${_v}${MKDIR} ${_DESTDIR}/root/bin
 	${_v}${INSTALL} ${TOOLSDIR}/zfsinstall ${_DESTDIR}/root/bin
+	${_v}${INSTALL} ${TOOLSDIR}/ufsinstall ${_DESTDIR}/root/bin
 	${_v}${INSTALL} ${TOOLSDIR}/destroygeom ${_DESTDIR}/root/bin
 	${_v}for SCRIPT in ${SCRIPTS}; do \
 		${INSTALL} -m 0555 ${SCRIPTSDIR}/$${SCRIPT} ${_DESTDIR}/etc/rc.d/; \
